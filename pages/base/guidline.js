@@ -2,7 +2,7 @@ import Layout from "../../components/Adviser/Layout";
 import styles from "../../styles/dentuer.module.css";
 import Link from "next/link";
 import Head from "next/head";
-
+import Image from "next/image";
 const Advisor = () => (
   <>
     <Head>
@@ -29,7 +29,10 @@ const Advisor = () => (
       {/* ############################################################################# Section One */}
       <div className={styles.section} style={{ background: "#fff" }}>
         <div className={styles.leftSide}>
-          <img src="/images/iso66.jpg" alt="ideal makoo Company" />
+          <div className={styles.image} >
+            <Image fill src='/images/iso66.jpg' alt="idealm pic" id={styles.img} />
+          </div>
+          {/* <img src="/images/iso66.jpg" alt="ideal makoo Company" /> */}
         </div>
         <div className={styles.rightSide}>
           <h1>زمینه فعالیت شرکت</h1>
@@ -49,7 +52,10 @@ const Advisor = () => (
         style={{ direction: "rtl", background: "#FFE6E6" }}
       >
         <div className={styles.leftSide}>
-          <img src="/images/teeth0112.png" alt="ideal makoo Company" />
+          {/* <img src="/images/teeth0112.png" alt="ideal makoo Company" /> */}
+          <div className={styles.image} >
+            <Image fill src='/images/teeth0112.png' alt="idealm pic" id={styles.img} />
+          </div>
         </div>
         <div className={styles.rightSide}>
           <h1 style={{ color: "#b30000" }}>طراحی مهندسی </h1>
@@ -66,7 +72,10 @@ const Advisor = () => (
       {/* ############################################################################# Section Three */}
       <div className={styles.section}>
         <div className={styles.leftSide}>
-          <img src="/images/ios60.jpg" alt="VetNow Company" />
+          {/* <img src="/images/ios60.jpg" alt="VetNow Company" /> */}
+          <div className={styles.image} >
+            <Image fill src='/images/ios60.jpg' alt="idealm pic" id={styles.img} />
+          </div>
         </div>
         <div className={styles.rightSide} style={{ backgroundColor: "#fff" }}>
           <h1 style={{ color: "#ff9900" }}>کنترل کیفیت</h1>

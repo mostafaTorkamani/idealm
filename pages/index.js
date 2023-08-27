@@ -49,7 +49,7 @@ export default function Home() {
       <InfoSection {...homeObjectOne} style={{ backgroundColor: "black" }} />
         <InfoSection {...homeObjectTwo} />
       <div style={{ margin: "0", padding: "0" }} ref={observe}>
-        <h1 id={styles["threedView"]}>3D View</h1>
+        {/* <h1 id={styles["threedView"]}>3D View</h1> */}
         <div className={styles["container"]}>
           <div className={styles["threeDSection"]}>
             {inView && (

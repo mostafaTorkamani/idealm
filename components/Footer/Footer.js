@@ -72,7 +72,7 @@ const Footer = () => {
                                 <FaTwitter />
                             </SocialIconLink>                           
                         </SocialIcons>
-                        <WebsiteRights>OnlinCEO Programing company  {new Date().getFullYear()} All rights reserved</WebsiteRights>
+                        <WebsiteRights>Goldan Mind Programing company  {new Date().getFullYear()} All rights reserved</WebsiteRights>
                         <Link href='/'>{<SocialLogo  onClick={toggleHome} >IDEAL MAKOO</SocialLogo>}</Link>
                     </SocialMediaWrap>
                 </SocialMedia>

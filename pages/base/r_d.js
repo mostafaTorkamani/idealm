@@ -3,6 +3,7 @@ import Layout from "../../components/Adviser/Layout";
 import styles from "../../styles/news.module.css";
 import Section2 from "../../components/base/section2";
 import Head from "next/head";
+import Image from "next/image";
 
 export default function Index() {
   return (
@@ -17,7 +18,10 @@ export default function Index() {
 
             <div className={styles["topSection"]}>
               <div className={styles["one"]}>
-                <img id={styles["imgNews"]} src="/images/qa.jpg" alt="" />
+                <div className={styles.image}>
+                  <Image fill  src='/images/qa.jpg' id={styles["imNews"]} />
+                </div >
+                {/* <img id={styles["imgNews"]} src="/images/qa.jpg" alt="" /> */}
                 <h1 id={styles["titleNews"]}>
                   مقایسه میزان سایش دندانهای مصنوعی ایرانی (برلیان و سوپر
                   برلیان) با دندان مصنوعی ایوکلار

@@ -86,6 +86,12 @@ direction: rtl; */
   width: 100%;
   height: 100%;
 }
+.img{
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
 #img {
   transition: all 0.5s ease-in-out;
   object-fit: contain;

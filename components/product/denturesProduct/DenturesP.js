@@ -1,6 +1,7 @@
 import stylesDentures from "./DenturesP.module.css";
 import { FiAlignCenter, FiHeart, FiTruck } from "react-icons/fi";
 import Link from "next/link";
+import Image from "next/image";
 export default function DenturesP({
   direction,
   rightTitle,
@@ -12,7 +13,7 @@ export default function DenturesP({
   leftSquareColor,
   middleSquareColor,
   rightSquareColor,
-  image
+  image,
 }) {
   return (
     <div className={stylesDentures["main"]}>
@@ -21,7 +22,10 @@ export default function DenturesP({
         style={{ direction: direction }}
       >
         <div className={stylesDentures["image"]}>
-          <img id={stylesDentures["img"]} src={image} alt="" />
+          {/* <img id={stylesDentures["img"]} src={image} alt="" /> */}
+          <div className={stylesDentures["img"]}>
+            <Image fill src={image} alt="idealm products pic" />
+          </div>
           <div className={stylesDentures["squareContainer"]}>
             <div style={{ flexDirection: "row", display: "flex" }}>
               <div

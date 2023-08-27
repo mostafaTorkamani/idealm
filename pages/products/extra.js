@@ -2,7 +2,7 @@ import Layout from "../../components/H&F/Layout";
 import DenturesP from "../../components/product/denturesProduct/DenturesP";
 import styles from "../../styles/Toothpaste.module.css";
 import React360Viewer from "../../components/3d/React360Viewer";
-import useInView from "react-cool-inview";
+import {useInView} from "react-cool-inview";
 import Head from "next/head";
 
 export default function Toothpaste() {
